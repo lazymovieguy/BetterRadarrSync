@@ -68,7 +68,7 @@ class RadarrMovie:
         return json.dumps(t)
 
     def __hash__(self):
-        return self.tmdbId[0]
+        return self.tmdbId
 
     def __eq__(self, other):
         return self.tmdbId == other.tmdbId
